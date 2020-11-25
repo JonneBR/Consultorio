@@ -1,0 +1,103 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: purple;
+}
+ul,
+li,
+p {
+  list-style: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2rem;
+}
+
+a {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: rgb(71, 71, 71);
+}
+
+.header {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+  /* border: 1px solid red; */
+}
+
+.menu li {
+  margin-left: 10px;
+}
+
+.menu li a {
+  display: block;
+  padding: 7px;
+  /* background: tomato; */
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 15vh 55vh 30vh;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  /* border: 1px solid red; */
+}
+
+main {
+  background: blue;
+  grid-area: main;
+  /* border: 1px solid red; */
+}
+
+.mainContent {
+  display: flex;
+  font-family: arial;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  background: url(bg-doc.jpg);
+  background-size: cover;
+}
+
+.mainContent img {
+  width: 35rem;
+  /* border: 1px solid red; */
+}
+
+footer {
+  background: #6db6eb;
+  grid-area: footer;
+  /* border: 1px solid red; */
+}
+
+.footerContent {
+  display: flex;
+  color: white;
+  /* border: 1px solid red; */
+  font-family: 'Nunito', sans-serif;
+  justify-content: center;
+  padding-left: 20px;
+  /* padding: 20px; */
+}
+
+#emergencia {
+  background: #3f6dda;
+  /* margin: 0; */
+}
+
+#hospitalidade,
+#emergencia,
+#valor {
+  padding-left: 10px;
+  padding-top: 10px;
+}
